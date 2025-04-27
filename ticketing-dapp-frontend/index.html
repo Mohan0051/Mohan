@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Decentralized Event Ticketing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Event Ticketing DApp</h1>
+
+    <div class="form-section">
+      <input type="text" id="eventName" placeholder="Enter Event Name">
+      <input type="text" id="userAddress" placeholder="Enter Wallet Address">
+      <button onclick="generateTicket()">Generate Ticket</button>
+    </div>
+
+    <div id="ticketSection" style="display: none;">
+      <h2>Ticket Details</h2>
+      <p><strong>Event:</strong> <span id="displayEvent"></span></p>
+      <p><strong>Wallet Address:</strong> <span id="displayAddress"></span></p>
+      <div id="qrcode"></div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
